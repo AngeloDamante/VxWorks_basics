@@ -65,5 +65,3 @@ vsb_vxsim_linux_SIMLINUXllvm_LP64_LARGE_SMP/
 .project
 .wrmakefile
 .wrproject
-
-test_periodic/
