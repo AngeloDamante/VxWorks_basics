@@ -55,8 +55,51 @@ My workstation is used as host with VxSim as target and the system viewer captur
 
 Windriver allows to create _download kernem modules_ (**DKM**). These are loaded into the target with "target actions for the selected connections" and "load modules".
 
+<!-- metti la gif -->
+
 ### Tasks
+The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/taskLib.html"> taskLib.h </a>.
+<!-- metti l'immagine -->
+* Task Creation and Activation
+    * taskSpawn( ) - Spawns (creates and activates) a new task.
+    * taskInit( ) - Initializes a new task.
+    * taskActivate( ) - Activates an initialized task.
+* Task Name and ID Routines
+    * taskName( ) - Gets the task name associated with a task ID.
+    * taskNameToId( ) - Looks up the task ID associated with a task.
+    * taskIdSelf( ) - Gets the calling task’s ID.
+    * taskIdVerify( ) - Verifies the existence of a specified task.
+* Task Information Routines
+    * taskIdListGet( ) - Fills an array with the IDs of all active tasks.
+    * taskInfoGet( ) - Gets information about a task.
+    * taskPriorityGet( ) - Examines the priority of a task.
+    * taskRegsGet( ) - Examines a task’s registers (cannot be used for current task).
+* Task-Deletion Routines
+    * exit( ) - Terminates the calling task and frees memory (task stacks and task control blocks only).
+    * taskDelete( ) - Terminates a specified task and frees memory (task stacks and task control blocks only).
+    * taskSafe( ) - Protects the calling task from deletion.
+    * taskUnsafe( ) - Undoes a taskSafe( ) (makes the calling task available for deletion). 
+* Task Control Routines
+    * taskSuspend( ) - Suspends a task.
+    * taskResume( ) - Resumes a task.
+    * taskRestart( ) - Restarts a task.
+    * taskDelay( ) - Delays a task, delay units and resolution in ticks.
+    * nanosleep( ) - Delays a task; delay units are nanoseconds.
 
 ### Semaphores
+The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/semLib.html">semLib.h</a>.
+
+* semTake() - take the resourse (decrease).
+* semGive() - release the resource (increase).
+* semBCreate() - spawns a binary semaphore.
+* semCCreate() - spawns a counting semaphore. 
+* semMCreate() - spawns a mutex semaphore.
 
 ### Periodic Activations
+The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/sysLib.html">sysLib.h</a>.
+
+* sysAuxClkConnect( ) - connect a routine to the auxiliary clock interrupt.
+* sysAuxClkDisable( ) - turn off auxiliary clock interrupts.
+* sysAuxClkEnable( ) - turn on auxiliary clock interrupts.
+* sysAuxClkRateGet( ) - get the auxiliary clock rate.
+* sysAuxClkRateSet( ) - set the auxiliary clock rate.
