@@ -55,11 +55,17 @@ My workstation is used as host with VxSim as target and the system viewer captur
 
 Windriver allows to create _download kernem modules_ (**DKM**). These are loaded into the target with "target actions for the selected connections" and "load modules".
 
-<!-- metti la gif -->
+<p align=center>
+    <img src="design/load_module.gif" width=350>
+</p>
 
-### Tasks
+## Tasks
 The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/taskLib.html"> taskLib.h </a>.
-<!-- metti l'immagine -->
+
+<p align=center>
+    <img src="design/task_states.png" width=300>
+</p>
+
 * Task Creation and Activation
     * taskSpawn( ) - Spawns (creates and activates) a new task.
     * taskInit( ) - Initializes a new task.
@@ -86,7 +92,7 @@ The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_
     * taskDelay( ) - Delays a task, delay units and resolution in ticks.
     * nanosleep( ) - Delays a task; delay units are nanoseconds.
 
-### Semaphores
+## Semaphores
 The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/semLib.html">semLib.h</a>.
 
 * semTake() - take the resourse (decrease).
@@ -95,7 +101,7 @@ The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_
 * semCCreate() - spawns a counting semaphore. 
 * semMCreate() - spawns a mutex semaphore.
 
-### Periodic Activations
+## Periodic Activations
 The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/sysLib.html">sysLib.h</a>.
 
 * sysAuxClkConnect( ) - connect a routine to the auxiliary clock interrupt.
