@@ -56,14 +56,14 @@ My workstation is used as host with VxSim as target and the system viewer captur
 Windriver allows to create _download kernem modules_ (**DKM**). These are loaded into the target with "target actions for the selected connections" and "load modules".
 
 <p align=center>
-    <img src="design/load_module.gif" width=350>
+    <img src="design/load_module.gif" width=400>
 </p>
 
 ## Tasks
 The library is <a href="https://docs.windriver.com/bundle/vxworks_7_application_core_os_sr0630-enus/page/CORE/taskLib.html"> taskLib.h </a>.
 
 <p align=center>
-    <img src="design/task_states.png" width=300>
+    <img src="design/task_states.png" width=400>
 </p>
 
 * Task Creation and Activation
