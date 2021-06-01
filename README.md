@@ -52,7 +52,7 @@ sp init         # launch task for test_periodic
 
 Below, I have listed the kernel shell commands,
 <p align=center>
-    <img src="design/help_console.png" width=300>
+    <img src="design/help_console.png" width=400>
 </p>
 
 ## VxWorks
