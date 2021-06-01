@@ -50,6 +50,11 @@ sp start        # launch task for test_semaphores
 sp init         # launch task for test_periodic
 ```
 
+Below, I have listed the kernel shell commands,
+<p align=center>
+    <img src="design/help_console.png" width=300>
+</p>
+
 ## VxWorks
 My workstation is used as host with VxSim as target and the system viewer capture the events and allows data exchange between.
 
